@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Javascript Form Validation (omar faruque -560) </title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   
+  
+   
+   <link rel="stylesheet" href="css/style.css">
+   
+
+   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+   <!--[if lt IE 8]>
+   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+   <![endif]-->
+
+
+   <div class="container">
+      <div class="form-area">
+
+         
+         <form class="form-horizontal form_validate" name="form" action="#" onsubmit="return validate()">
+
+            <div class="form-group">
+               <h1 class="heading col-md-12 text-center">Sign Up Form</h1>
+               <hr>
+            </div>
+            <div class="form-group">
+               <label for="inputName" class="col-lg-3 control-label">Username</label>
+               <div class="col-lg-9">
+                  <input class="form-control" id="inputName" placeholder="Input your username" type="text" name="username">
+                  <p class="text" id="uname"></p>
+                  <p class="alrt" id="ualert"></p>
+                  
+               </div>
+            </div>
+            <div class="form-group">
+               <label for="inputPassword" class="col-lg-3 control-label">Password</label>
+               <div class="col-lg-9">
+                  <input class="form-control" id="inputPassword" placeholder="Input password" type="password" name="password">
+                  <p class="text" id="psd"></p>
+                  <p class="alrt" id="palert"></p>
+               </div>
+            </div>
+
+            <div class="form-group">
+               <label for="confirmPassword" class="col-lg-3 control-label">Confirm Password</label>
+               <div class="col-lg-9">
+                  <input class="form-control" id="confirmPassword" placeholder="Confirm password" type="password" name="confirmPassword">
+                  <p class="text" id="cpsd"></p>
+                  <p class="alrt" id="cpalert"></p>
+                  <p id="psdAlert"></p>
+               </div>
+            </div>
+
+            <div class="form-group">
+               <label for="firstName" class="col-lg-3 control-label">First Name</label>
+               <div class="col-lg-9">
+                  <input class="form-control" id="firstName" placeholder="First Name" type="text" name="firstName">
+                  <p class="text" id="fname"></p>
+                  <p class="alrt" id="fnalert"></p>
+               </div>
+            </div>
+
+            <div class="form-group">
+               <label for="lastName" class="col-lg-3 control-label">Last Name</label>
+               <div class="col-lg-9">
+                  <input class="form-control" id="lastName" placeholder="Last Name" type="text" name="lastName">
+                  <p class="text" id="lname"></p>
+                  <p class="alrt" id="fnalert"></p>
+               </div>
+            </div>
+
+            <div class="form-group">
+               <label for="email" class="col-lg-3 control-label">Email</label>
+               <div class="col-lg-9">
+                  <input class="form-control" id="email" placeholder="Email" type="mail" name="email">
+                  <p class="text" id="mail"></p>
+                  <p class="alrt" id="malert"></p>
+               </div>
+            </div>
+
+
+            <div class="form-group">
+               <div class="col-lg-12 text-center">
+                  <button type="submit" class="btn btn-success btn-lg ">Submit</button>
+               </div>
+            </div>
+         </form>
+
+      </div>
+   </div>
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')
+   </script>
+   
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
